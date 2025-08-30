@@ -13,7 +13,7 @@
 
 ## 🧠 How it Works
 
-1. Triggered by Radarr on events you choose (e.g., **On Download**, **On Movie Added**, etc.).
+1. Triggered by Radarr on events you choose (e.g., **On Grab**, **On File Import**, **On File Upgrade**, **On Rename**, **On Movie Added**).
 2. Fetches metadata in this order:
    - Radarr DB (`/api/v3/movie/{id}`)
    - `radarr_movie_genres` environment variable (from Radarr)
