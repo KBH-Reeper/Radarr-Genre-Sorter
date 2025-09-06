@@ -86,3 +86,14 @@ docker exec -it radarr chmod +x /config/scripts/Genre_Sorter_Radarr.sh
   ["Fantasy"]="Sci-Fi"
   ["Science Fiction"]="Sci-Fi"
 ```
+## Good to Know!
+- If the script is updated - Radarr will need to be given permissions to the file to successfully perform executions/access the file
+  - First: access the Radarr docker container
+  ````bash
+  docker exec -it radarr sh
+  ````
+  - Second: provide access to the updated file
+  ````bash
+  chmod 755 /ROOT:FOLDER/Scripts/genre_sort.sh
+  ````
+  
